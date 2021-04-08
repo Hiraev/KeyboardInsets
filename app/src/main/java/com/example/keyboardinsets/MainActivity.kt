@@ -9,12 +9,12 @@ import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.EditText
 import android.widget.FrameLayout
-import android.widget.ScrollView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.updatePadding
+import androidx.core.widget.NestedScrollView
 import java.util.logging.Logger
 
 class MainActivity : AppCompatActivity() {
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             setTextColor(Color.BLACK)
             setBackgroundColor(Color.WHITE)
         }
-        val scrollView = ScrollView(this).apply {
+        val scrollView = NestedScrollView(this).apply {
             layoutParams = CoordinatorLayout.LayoutParams(MATCH_PARENT, MATCH_PARENT)
         }
 
