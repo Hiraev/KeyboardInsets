@@ -8,7 +8,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.NoActionBar">
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name=".MainActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
